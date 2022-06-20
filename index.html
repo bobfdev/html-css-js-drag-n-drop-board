@@ -8,10 +8,22 @@
     <title>Drag N Drop Kanban Board</title>
 </head>
 <body>
+    <!-- Modal -->
+    <div class="modal" id="todo_form">
+        <div class="header">
+            <div class="title">Modal</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ratione quibusdam culpa quisquam, consequatur fugit nihil magni praesentium at sed.
+        </div>
+    </div>
+
+    <!-- Todo -->
     <div class="todo-container">
         <div class="status">
             <h1>No Status</h1>
-            <button id="add-btn">+ Add Todo</button>
+            <button id="add-btn" data-target-modal="#todo-form">+ Add Todo</button>
             <div class="todo" draggable="true">
                 Order Pizza
                 <span class="close">&times;</span>
@@ -27,6 +39,9 @@
             <h1>Completed</h1>
         </div>
     </div>
+
+    <div id="overlay"></div>
+
     <script src="script.js"></script>
 </body>
 </html>
