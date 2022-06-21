@@ -47,7 +47,7 @@ const overlay = document.getElementById('overlay');
 
 btns.forEach((btn) => {
     btn.addEventListener('click', () => {
-        document.querySelector(btn.dataset.target).classList.add('active');
+        document.querySelector(btn.dataset.targetModal).classList.add('active');
         overlay.classList.add('active');
     });
 });

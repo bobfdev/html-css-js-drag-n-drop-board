@@ -131,3 +131,10 @@ body {
 #overlay.active {
     display: block;
 }
+
+#todo-input,
+#todo-submit {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 0.25rem;
+}
