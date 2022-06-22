@@ -9,10 +9,16 @@ todos.forEach((todo) => {
 
 function dragStart() {
     draggableTodo = this;
+    setTimeout(() => {
+        this.style.display = 'none';
+    }, 0);
 }
 
 function dragEnd() {
     draggableTodo = null;
+    setTimeout(() => {
+        this.style.display = 'block';
+    }, 0);
 }
 
 all_status.forEach((status) => {
@@ -83,5 +89,32 @@ function createTodo() {
     todo_div.setAttribute('draggable', 'true');
 
     /* Create Span */
+    const span = document.createElement('span');
+    const span_txt = document.createTextNode('\u00D7');
+    span.classList.add('close');
+    span.appendChild(span_txt);
+
+    todo_div.appendChild(span);
     
+    no_status.appendChild(todo_div);
+
+    span.addEventListener('click', () => {
+        span.parentElement.style.display = 'none';
+    });
+
+    todo_div.addEventListener('dragstart', dragStart);
+    todo_div.addEventListener('dragend', dragEnd);
+
+    document.getElementById('todo_input').value = '';
+
+    todo_form.classList.remove('active');
+    overlay.classList.remove('active');
 }
+
+const close_btns = document.querySelectorAll('.close');
+
+close_btns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        btn.parentElement.style.display = 'none';
+    });
+});

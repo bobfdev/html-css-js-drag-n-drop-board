@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-.todo-container {
+.todo_container {
     width: 1000px;
     height: 80vh;
     display: flex;
@@ -38,7 +38,7 @@ body {
     padding: 0.5rem 1rem;
 }
 
-#add-btn {
+#add_btn {
     padding: 0.5rem 1rem;
     background-color: #ccc;
     outline: none;
@@ -50,7 +50,7 @@ body {
     cursor: pointer;
 }
 
-#add-btn:hover {
+#add_btn:hover {
     background-color: #bbb;
 }
 
@@ -82,7 +82,7 @@ body {
 
 /* modal */
 
-.close-modal {
+.close_modal {
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -132,14 +132,14 @@ body {
     display: block;
 }
 
-#todo-input,
-#todo-submit {
+#todo_input,
+#todo_submit {
     padding: 0.5rem 1rem;
     width: 100%;
     margin: 0.25rem;
 }
 
-#todo-submit {
+#todo_submit {
     background-color: #4caf50;
     color: #f3f3f3;
     font-size: 1.25rem;

@@ -9,22 +9,22 @@
 </head>
 <body>
     <!-- Modal -->
-    <div class="modal" id="todo-form">
+    <div class="modal" id="todo_form">
         <div class="header">
-            <div class="title">Modal</div>
-            <button class="btn close-modal">&times;</button>
+            <div class="title">Add Todo</div>
+            <button class="btn close_modal">&times;</button>
         </div>
         <div class="body">
-           <input type="text" id="todo-input">
-           <input type="submit" value="Add Todo" id="todo-submit">
+           <input type="text" id="todo_input">
+           <input type="submit" value="Add Todo" id="todo_submit">
         </div>
     </div>
 
     <!-- Todo -->
-    <div class="todo-container">
-        <div class="status">
+    <div class="todo_container">
+        <div class="status" id="no_status">
             <h1>No Status</h1>
-            <button id="add-btn" data-target-modal="#todo-form">+ Add Todo</button>
+            <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
             <div class="todo" draggable="true">
                 Order Pizza
                 <span class="close">&times;</span>
