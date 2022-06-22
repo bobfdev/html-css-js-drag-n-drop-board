@@ -67,3 +67,21 @@ window.onclick = (event) => {
         overlay.classList.remove('active');
     }
 };
+
+/* Create Todo */
+const todo_submit = document.getElementById('todo_submit');
+
+todo_submit.addEventListener('click', createTodo);
+
+function createTodo() {
+    const todo_div = document.createElement('div');
+    const input_val = document.getElementById('todo_input').value;
+    const txt = document.createTextNode(input_val);
+
+    todo_div.appendChild(txt);
+    todo_div.classList.add('todo');
+    todo_div.setAttribute('draggable', 'true');
+
+    /* Create Span */
+    
+}
